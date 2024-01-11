@@ -1,0 +1,25 @@
+---
+classes: 
+    - wide
+    - dark-theme
+title: "First Post"
+date: 2024-01-11
+show_date: true
+categories: [blog]
+toc: true
+toc_label: "Table of Contents"
+excerpt: "My first post a description"
+header:
+  overlay_image: /assets/images/fblog.png
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Random picture"
+---
+# Introduction
+What is going on.
+
+# Data & Methods
+What am I looking at
+
+## Heading1
+
+Hi Beanie!
