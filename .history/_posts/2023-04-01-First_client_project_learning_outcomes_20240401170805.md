@@ -5,7 +5,7 @@ classes:
 title: "First client project learning outcomes"
 date: 2024-01-11
 categories: [blog]
-# toc: true
+toc: true
 # toc_label: "Table of Contents"
 # excerpt: "An example"
 header:
@@ -46,16 +46,16 @@ To conclude this project highlighted the importance of effective communication a
 ## Skills gained
 
 Client management and report skills:
-- Understood business requirements and what is feasible within time constraints.
-- Managed client expectations.
-- Took initiative in driving project discussions and decisions and took on board client feedback.
-- Tailored reporting to focus on the business impact.
+	- Understood business requirements and what is feasible within time constraints.
+	- Managed client expectations.
+	- Took initiative in driving project discussions and decisions and took on board client feedback.
+	- Tailored reporting to focus on the business impact.
 
 Working as a team:
-- Emphasised open communication and collaboration within the team, and actively sought clarification if necessary.
-- Applied agile structure to meetings and prepared agendas to ensure efficiency.
-- Leveraged individual strengths in task delegation.
-- Group coding with git, and developed code styles to ensure code was maintainable.
+	- Emphasised open communication and collaboration within the team, and actively sought clarification if necessary.
+	- Applied agile structure to meetings and prepared agendas to ensure efficiency.
+	- Leveraged individual strengths in task delegation.
+	- Group coding with git, and developed code styles to ensure code was maintainable.
 
 Addressing technical problems:
 - Demonstrated agility and problem-solving skills in addressing project challenges and meeting deadlines.
