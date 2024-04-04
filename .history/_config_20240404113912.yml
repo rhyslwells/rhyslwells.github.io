@@ -119,8 +119,9 @@ author:
     #   url: "rhyslwells@outlook.com"
 
     - label: "Linkedin"
-      icon: "fab fa-linkedin-square"
-      # icon: "fa fa-linkedin-square"
+      icon: "fab fa-fw fa-linkedin-square"
+      icon: "fa fa-linkedin-square"
+      # icon: "fa-brands fa-linkedin"
       url: "https://www.linkedin.com/in/rhyslwells/"
 
     - label: "GitHub"

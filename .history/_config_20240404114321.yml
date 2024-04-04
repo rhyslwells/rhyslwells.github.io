@@ -121,6 +121,7 @@ author:
     - label: "Linkedin"
       icon: "fab fa-linkedin-square"
       # icon: "fa fa-linkedin-square"
+      # icon: "fa-brands fa-linkedin"
       url: "https://www.linkedin.com/in/rhyslwells/"
 
     - label: "GitHub"

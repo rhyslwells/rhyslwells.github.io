@@ -8,7 +8,7 @@ categories: [blog]
 tags: [data science, client project, learning outcomes]
 # toc: true
 # toc_label: "Table of Contents"
-excerpt: "Learning outcomes from Science to Data Science project."
+# excerpt: "An example"
 header:
 #   overlay_image: /assets/images/fblog.png
 #   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background

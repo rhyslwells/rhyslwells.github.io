@@ -112,22 +112,19 @@ author:
   avatar           : "/assets/images/fav.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Scientist"
   location         : "Scotland"
-  # email            : "rhyslwells@outlook.com"
+  email            : "rhyslwells@outlook.com"
   links:
-    # - label: "Email"
-    #   icon: "fas fa-fw fa-envelope-square"
-    #   url: "rhyslwells@outlook.com"
-
-    - label: "Linkedin"
-      icon: "fab fa-linkedin-square"
-      # icon: "fa fa-linkedin-square"
-      url: "https://www.linkedin.com/in/rhyslwells/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "rhyslwells@outlook.com"
 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rhyslwells"
 
-
+    # - label: "Linkedin"
+    #   icon: "fab fa-fw fa-linkedin-square"
+    #   url: "https://www.linkedin.com/in/rhyslwells/"
 
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
