@@ -10,12 +10,12 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
-  # - title: "Posts"
-  #   url: /year-archive/
-  #   description: words that appear!
+  - title: "Posts"
+    url: /year-archive/
+    description: words that appear!
 
-  # - title: "Categories"
-  #   url: /categories/
+  - title: "Categories"
+    url: /categories/
 
   # - title: "External Link"
   #   url: https://google.com
