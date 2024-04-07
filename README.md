@@ -3,6 +3,7 @@
 - [ ] Add a search function.
 - [ ] Incorporate about me alternative.
 - [ ] How to link pages with post_url. (in about page)
+- [ ] Fix so builds (possibly revert last commit)
 
 # Explore for inspiration and setup:
 
