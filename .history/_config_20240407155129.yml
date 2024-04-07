@@ -97,10 +97,6 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-  - https://www.linkedin.com/in/rhyslwells/
-
-linkedin:
-  username:  "rhyslwells" #(the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
 
 # Analytics
 analytics:
@@ -108,6 +104,7 @@ analytics:
   google:
     tracking_id          :
     anonymize_ip         : # true, false (default)
+
 
 # Site Author
 author:
@@ -120,11 +117,16 @@ author:
     # - label: "Email"
     #   icon: "fas fa-fw fa-envelope-square"
     #   url: "rhyslwells@outlook.com"
+
+
+
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rhyslwells"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
+
+    - label: "Linkedin"
+      icon: "fa-linkedin-square"
+      # icon: "fa fa-linkedin-square"
       url: "https://www.linkedin.com/in/rhyslwells/"
 
 
