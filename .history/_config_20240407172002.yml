@@ -116,9 +116,9 @@ analytics:
 author:
   name             : "Rhys Wells"
   avatar           : "/assets/images/fav.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Scientist with a passion for learning."
+  bio              : "Data Scientist"
   location         : "Scotland"
-  email            : "rhyslwells@outlook.com"
+  # email            : "rhyslwells@outlook.com"
   links:
     # - label: "Email"
     #   icon: "fas fa-fw fa-envelope-square"
