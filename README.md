@@ -1,7 +1,5 @@
 # TODO
 
-- [ ] Add a search function.
-- [ ] Incorporate about me alternative.
 - [ ] How to link pages with post_url. (in about page)
 
 # Explore for inspiration and setup:
