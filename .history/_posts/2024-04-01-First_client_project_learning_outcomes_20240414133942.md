@@ -9,7 +9,7 @@ categories:
 tags: [data science, client project, learning outcomes]
 # toc: true
 # toc_label: "Table of Contents"
-excerpt: "Learning outcomes from my Science to Data Science placement."
+excerpt: "Learning outcomes from Science to Data Science project."
 header:
   overlay_image: assets\images\2024-04-01-First_client_project_learning_outcomes\Designer (1).jpeg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
