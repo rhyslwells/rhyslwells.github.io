@@ -1,6 +1,7 @@
 # TODO
 
 - [ ] How to link pages with post_url. (in about page)
+- [ ] Fix images not loading.
 
 # Explore for inspiration and setup:
 
