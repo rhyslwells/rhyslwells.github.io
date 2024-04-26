@@ -11,8 +11,9 @@ tags: [data science, client project, learning outcomes]
 # toc_label: "Table of Contents"
 excerpt: "Learning outcomes from my Science to Data Science placement."
 header:
-  overlay_image: assets\images\client.jpeg
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  teaser: "assets\images\bg-home.jpg"
+  # overlay_image: 
+  # overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 #   caption: "Random picture"
 ---
 
