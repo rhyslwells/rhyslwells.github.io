@@ -11,7 +11,7 @@ toc: false
 
 Hi,
 
-My name is Rhys Wells, I am a data scientist based in Scotland. Posts here are for me to spread my thoughts and learnings. 
+My name is Rhys Wells, I am based in Scotland. Posts here are for me to spread my thoughts and learnings. 
 
 In regards to my work, I hope to use my skills to make a positive impact and make the world a better place. My approach follows my favourite saying,
 
@@ -21,13 +21,17 @@ In regards to my work, I hope to use my skills to make a positive impact and mak
 
 Please feel free to contact me at rhyslwells-at-outlook.com
 
+## News
+
+- **June 2024**: I joined [Veolia](https://www.veolia.co.uk/) as a data engineer.
+
 ## Interests
 
 - I enjoy reading the [Stormlight Archive](https://www.brandonsanderson.com/the-stormlight-archive-series/) series by Brandon Sanderson.
 - Taking my dog for a walk in the Scottish countryside.
-- I am a keen runner and cyclist, and currently training for an Ironman.
+- I am a keen runner and cyclist, and I am currently training for an Ironman.
 
-## I studied here
+## Education
 
 I studied mathematics and have spent a long time teaching.
 
@@ -38,5 +42,4 @@ I studied mathematics and have spent a long time teaching.
 ## I hang around here
 
 * Message me on [LinkedIn](https://www.linkedin.com/in/rhyslwells/)
-* Slide in my DMs on [Instagram](https://www.instagram.com/rhyslwells/)
 * Follow me on [Strava](https://www.strava.com/athletes/88158462)
