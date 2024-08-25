@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 gemspec
 
-# bundle exec jekyll serve --livereload
+# bundle exec jekyll serve
