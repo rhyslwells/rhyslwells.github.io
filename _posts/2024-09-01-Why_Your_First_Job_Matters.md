@@ -2,7 +2,7 @@
 classes: 
     - wide
     - dark-theme
-title: "Why your First Job Matters"
+title: "Why your first job matters"
 date: 2024-09-01
 categories :
     - blog

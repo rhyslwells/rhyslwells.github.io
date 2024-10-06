@@ -2,7 +2,7 @@
 classes: 
     - wide
     - dark-theme
-title: "Why Blog in a World of LLM's?"
+title: "Why blog in a world of LLM's?"
 date: 2024-08-24
 categories :
     - blog
