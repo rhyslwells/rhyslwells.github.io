@@ -1,0 +1,20 @@
+---
+permalink: /about/academic/
+title: "Academic"
+layouts_gallery:
+#   - url: /assets/images/mm-layout-splash.png
+#     image_path: /assets/images/mm-layout-splash.png
+#     alt: "splash layout example"
+# last_modified_at: 2022-05-27T11:59:26-04:00
+toc: false
+---
+
+Image
+
+## Ph.D Thesis
+
+## Conferences and Workshops
+
+## Talks
+
+## Teaching
