@@ -16,7 +16,7 @@ header:
 #   caption: "Random picture"
 ---
 
-# Asking Better Questions
+# Effective Research: Asking Better Questions
 
 Lately, I’ve been building a digital note-taking system in Obsidian—a powerful tool that interlinks notes to create a web of knowledge. If Obsidian is new to you, there are many resources with detailed explanations of its capabilities ([here's a good starting point](https://www.youtube.com/watch?v=OUrOfIqvGS4)).
 
@@ -29,7 +29,7 @@ In this post, I’ll explore how I use the Data Archive to support research and 
 ![Image 1](/assets/images/betterqus/image1.png)
 
 
-## Expansion: Discovery through Obsidian Copilot
+## Expansion: Discovering Obsidian Copilot
 
 One transformative addition to my workflow is the [Obsidian Copilot plugin](https://github.com/logancyang/obsidian-copilot). By integrating ChatGPT directly into my vault, it minimises the need for switching between windows, keeping me focused and enhancing productivity. Given the low cost relative to its value, it’s been an invaluable asset.
 
