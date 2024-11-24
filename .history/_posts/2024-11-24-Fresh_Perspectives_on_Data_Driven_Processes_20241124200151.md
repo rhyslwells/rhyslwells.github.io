@@ -55,7 +55,6 @@ Another important starting task in building a data culture, is to conduct a data
 
 - Over time, legacy systems accumulate technical debt: mismanaged data, inconsistent naming conventions, and abandoned tools.
 - Prioritize systems that consistently show value to ensure long-term success.
-
 ## Demonstrating the Value of a Data-Driven Culture
 
 A data-driven culture thrives when its benefits are clear to everyone involved. This means showing **tangible** improvements and empowering teams to innovate.
