@@ -2,7 +2,7 @@
 classes: 
     - wide
     - dark-theme
-title: "Better Questions with the Data Archive"
+title: "Better questions with the Data Archive"
 date: 2024-11-24
 categories :
     - blog
