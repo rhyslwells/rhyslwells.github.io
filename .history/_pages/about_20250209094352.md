@@ -33,13 +33,14 @@ Please feel free to contact me at rhyslwells-at-outlook.com
 - Taking my dog for a walk in the Scottish countryside.
 - I am a keen runner and cyclist, and I am currently training for an Ironman.
 
-## Education
+## Education & Experience
 
-I studied mathematics and have spent a long time teaching.
+I studied mathematics at:
 
 * Phd in Mathematics from the [Univesity of Liverpool](https://www.liverpool.ac.uk/)
 * M.Sci in Mathematics from the [University of Glasgow](https://www.gla.ac.uk/)
 
+I have consolidated my skills and experience [here](https://docs.google.com/spreadsheets/d/1xV2kQ0mlwWhZMohxKY38c5cfSIr7DSLMbcBjwv0GEyY/edit?gid=0#gid=0).
 
 ## I hang around here
 
