@@ -1,0 +1,21 @@
+/* Override author_profile spacing and layout when disabled */
+
+@media (min-width: 64em) {
+    .page__inner-wrap {
+      max-width: 100% !important;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  
+  .sidebar {
+    display: none !important;
+  }
+  
+  .layout--single .page {
+    display: block !important;
+    margin: 0 auto;
+  }
+  
