@@ -13,9 +13,9 @@ A collection of personal projects, built to learn various skills in data science
 
 # Data Archive
 
-The [Data Archive](https://rhyslwells.github.io/Data-Archive/pages/Data_Archive) is the single place for all my data related knowledge. It is built on idea of a Digital Garden, for more details see [Github](https://github.com/rhyslwells/data-archive).
+The [Data Archive](https://rhyslwells.github.io/Data-Archive) is the single place for all my data related knowledge. It is built on idea of a Digital Garden, for more details see [Github](https://github.com/rhyslwells/data-archive).
 
-# AIS
+# AIS (Pending further particapation)
 
 The Amateur Investment Seminar (AIS) is a monthly discussion on investment strategy and financial education.
 

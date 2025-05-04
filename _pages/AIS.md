@@ -16,5 +16,3 @@ We meet on the last Thursday of every month at 7pm GMT.
 Additionally we have a collection of resources on our [GitHub repository](https://github.com/rhyslwells/AIS), where we share our research and analysis.
 
 Notes from sessions will be posted here.
-
-

@@ -6,7 +6,7 @@ title: "Building interpretable decision trees"
 date: 2024-12-02
 categories :
     - blog
-tags: [advice]
+tags: [machine learning, decision trees, interpretability]
 # toc: true
 # toc_label: "Table of Contents"
 excerpt: "Building interpretable decision trees"
@@ -16,7 +16,7 @@ header:
 #   caption: "Random picture"
 ---
 
-In this post, we explore how to build [Decision Trees](https://rhyslwells.github.io/Data-Archive/standardised/Decision-Tree) so they are [interpretable](https://rhyslwells.github.io/Data-Archive/standardised/interpretability) . Our goal will be to give the simplest model that retains the predictive power of a more involved model. 
+In this post, we explore how to build [Decision Trees](https://rhyslwells.github.io/Data-Archive/standardised/Decision-Tree) so they are [interpretable](https://rhyslwells.github.io/Data-Archive/standardised/interpretability). Our goal will be to give the simplest model that retains the predictive power of a more involved model. 
 
 We will use the Titanic dataset for its simplicity in this workflow, however the method can be applied to many other datasets. You can find the complete script for this workflow [here](https://github.com/rhyslwells/ML_Tools/blob/main/Classifiers/Decision_Tree/Interpretable_Decision_Tree/Decision_Tree_Interpretable.py). The links within this post redirect to the [Data-Archive](https://rhyslwells.github.io/Data-Archive/pages/Data_Archive), my second brain for all things data and modelling. The Archive acts as part of my research flywheel, more on that another day. Let us begin by looking at the data and building the `Best` model.
 

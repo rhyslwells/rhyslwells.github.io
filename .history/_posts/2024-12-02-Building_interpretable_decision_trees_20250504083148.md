@@ -11,16 +11,15 @@ tags: [advice]
 # toc_label: "Table of Contents"
 excerpt: "Building interpretable decision trees"
 header:
-  overlay_image: /assets/images/fresh_persp/header.png
+  overlay_image: 
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 #   caption: "Random picture"
 ---
 
-# Building Interpretable Decision Trees
+In this post, we explore how to build [Decision Trees](https://rhyslwells.github.io/Data-Archive/standardised/Decision-Tree) so they are [interpretable](https://rhyslwells.github.io/Data-Archive/standardised/interpretability). Our goal will be to give the simplest model that retains the predictive power of a more involved model. 
 
-In this post, we explore how to build [Decision Trees](https://rhyslwells.github.io/Data-Archive/standardised/Decision-Tree) so they are [interpretable](https://rhyslwells.github.io/Data-Archive/standardised/interpretability) . Our goal will be to give the simplest model that retains the predictive power of more involved models. 
+We will use the Titanic dataset for its simplicity in this workflow, however the method can be applied to many other datasets. You can find the complete script for this workflow [here](https://github.com/rhyslwells/ML_Tools/blob/main/Classifiers/Decision_Tree/Interpretable_Decision_Tree/Decision_Tree_Interpretable.py). The links within this post redirect to the [Data-Archive](https://rhyslwells.github.io/Data-Archive/pages/Data_Archive), my second brain for all things data and modelling. The Archive acts as part of my research flywheel, more on that another day. Let us begin by looking at the data and building the `Best` model.
 
-We will use the Titanic dataset for its simplicity in this workflow, however the method can be applied to many other datasets. You can find the complete script for this workflow [here](https://github.com/rhyslwells/ML_Tools/blob/main/Classifiers/Decision_Tree/Interpretable_Decision_Tree/Decision_Tree_Interpretable.py). The links within this post redirect to the [Data-Archive](https://rhyslwells.github.io/Data-Archive/pages/Data_Archive), my second brain for all things data and modelling. The Archive acts as part of my research flywheel, more on that another day. Let us begin by building the `Best` model.
 ## But First the Data
 
 The Titanic dataset is used in a classic binary classification problem where the goal is to predict passenger survival (1 for survived, 0 for not survived). Before diving into the workflow process, we preprocess the data by:
@@ -55,8 +54,7 @@ param_grid = {
     'max_depth': [2, 3, 5, 7, 10, None],
     'min_samples_split': [2, 5, 10],
     'min_samples_leaf': [1, 2, 4],
-    'criterion': ['gini', 'entropy']
-}
+    'criterion': ['gini', 'entropy']}
 
 # Perform grid search
 grid_search = GridSearchCV(DecisionTreeClassifier(random_state=42), param_grid, cv=5, scoring='accuracy')
@@ -77,7 +75,7 @@ and has the following form:
 
 ![Image 1](/assets/images/Interpretable_Decision_Trees_images/best_model.png)
 
-Evaluating using 5 fold [cross-validation](https://rhyslwells.github.io/Data-Archive/standardised/Cross-validation) , which we  do in every case when determining  [Classification Metrics](https://rhyslwells.github.io/Data-Archive/standardised/Classification-Metrics), gives an evaluation matrix of the form:
+Evaluating using 5 fold [cross-validation](https://rhyslwells.github.io/Data-Archive/standardised/Cross-validation), which we  do in every case when determining  [Classification Metrics](https://rhyslwells.github.io/Data-Archive/standardised/Classification-Metrics), gives an evaluation matrix of the form:
 
 | Metric    | Mean   | Std    |
 | --------- | ------ | ------ |
@@ -91,16 +89,16 @@ One could argue that such a tree is to large to be understandable. We will now r
 
 ## Simplifying a Decision Tree
 
-For Decision Trees the two most common methods to increase interpretability are to prune or do feature selection. [Feature selection](https://rhyslwells.github.io/Data-Archive/standardised/Feature-Selection) (FS) improves interpretability by reducing the number of variables in the model dataset. Whereas pruning trims unnecessary branches in the tree, simplifying its structure while maintaining performance. For Decision Trees is important to determine whether FS should be done before or after pruning a model, as each has pros and cons.
+For Decision Trees the two most common methods to increase interpretability are to prune or do feature selection. [Feature selection](https://rhyslwells.github.io/Data-Archive/standardised/Feature-Selection) (FS) improves interpretability by reducing the number of variables in the model dataset. Whereas pruning trims unnecessary branches in the tree, simplifying its structure while maintaining performance. For Decision Trees it is important to determine whether FS should be done before or after pruning a model, as each has pros and cons.
 
 FS before pruning:
    - Reduces the input space early.
-   - Leverages the full complexity of the model to determine feature importance.
+   - Uses the full complexity of the model to determine feature importance.
    - Helps mitigate overfitting.
 
 FS after pruning:
    - Aligns with a simplified model.
-   - Focuses on interpretability by prioritising simplicity over performance.
+   - Focuses on interpretability and prioritises simplicity over performance.
 
 Since the Titanic dataset is relatively small, and we aim to maintain predictive power, we perform FS before pruning.
 
@@ -120,7 +118,9 @@ selected_features = [features[i] for i in range(len(features)) if rfe.support_[i
 print("Selected Features:", selected_features)
 ```
 
-The top three features are `Pclass, Age, Sex_male`. We will use this subset of the dataset for subsequent modelling steps. We can further simplify the model by increasing the size of the bins the values are partitioned into. Suppose we take the feature selected dataset and construct the Decision Tree model with the `Base` hyperparameters.
+The top three features are `Pclass, Age, Sex_male`. We will use this subset for subsequent modelling steps. 
+
+We can further simplify the model by increasing the size of the bins that values are partitioned into. Suppose we take the feature selected dataset and construct the Decision Tree model with the following `Base` hyperparameters.
 
 | Hyperparameter      | `Best` Value | `Base` Value |
 | ------------------- | ------------ | ------------ |
@@ -142,16 +142,17 @@ Recalculating the evaluation metrics for the `Base` model we obtain arguable sim
 
 ### Pruning
 
-Now that we have a simplified model and a reduced dataset we can prune the model using [cost-complexity pruning](https://scikit-learn.org/1.5/auto_examples/tree/plot_cost_complexity_pruning.html) . 
+Now that we have a simplified model and a reduced dataset, we can prune the model using [cost-complexity pruning](https://scikit-learn.org/1.5/auto_examples/tree/plot_cost_complexity_pruning.html). 
 
 This method determines the optimal pruning threshold (`ccp_alpha`). We achieve this with the following snippet:
+
 ```python
-# Get pruning path
+# Get the pruning path
 ccp_path = base_interpretable_model.cost_complexity_pruning_path(X_train_rfe, y_train)
 ccp_alphas = ccp_path.ccp_alphas
 ```
 
-We evaluate the `Base` model pruned using various `ccp_alpha` values using cross-validation for accuracy:
+When we evaluate the `Base` model pruned using various `ccp_alpha` values using cross-validation for accuracy we get:
 
 | ID  | ccp_alpha | accuracy |
 | --- | --------- | -------- |
@@ -163,15 +164,15 @@ We evaluate the `Base` model pruned using various `ccp_alpha` values using cross
 | 6   | 0.015924  | 0.783650 |
 | 7   | 0.038605  | 0.778046 |
 
-We can be aggressive here (taking ccp_alpha = 0.015924) as pruning does not significantly reduce the accuracy in this case.  The result is the following pruned decision tree:
+We can be aggressive and take $ccp\_alpha = 0.015924$, as pruning does not significantly reduce the accuracy in this case.  The result is the following `Final` pruned decision tree:
 
 ![Image 2](/assets/images/Interpretable_Decision_Trees_images/pruned.png)
 
 ## Conclusion
 
-Let compare the evaluation metrics so far:
+Lets compare the evaluation metrics for our our initial model and our interpretable model:
 
-| Metric    | `Best` Mean | `Final` Pruned | `Best` Std | `Final` Std |
+| Metric    | `Best` Mean | `Final` Mean | `Best` Std | `Final` Std |
 | --------- | ----------- | -------------- | ---------- | ----------- |
 | Accuracy  | 0.8103      | 0.7837         | 0.0121     | 0.0316      |
 | Precision | 0.7966      | 0.8775         | 0.0185     | 0.1277      |
@@ -179,9 +180,19 @@ Let compare the evaluation metrics so far:
 | F1 Score  | 0.7325      | 0.6462         | 0.0302     | 0.0540      |
 | ROC AUC   | 0.8499      | 0.8039         | 0.0273     | 0.0357      |
 
-We can see that the `Pruned` Decision Tree achieves a balance between interpretability and predictive performance. 
+We can see that the `Final` model provides comparable performance with much more interpretable decision tree.
 
-We see that the pruned Base Model on a reduced dataset provides comparable performance with much more interpretable decision tree.
+### Final Remarks
 
-This workflow demonstrates that it’s possible to balance interpretability and prediction.
+Here's a more reader-friendly rewrite of your final remarks:
 
+---
+
+### Final Remarks
+
+
+When exploring topics like this, I prefer `.py` files over `.ipynb` notebooks, using IPython instead of Jupyter. I find this approach better aligns with production workflows while still offering the flexibility needed for exploration.
+
+That said, presenting content in this format can be challenging. Reading through a full script isn’t always the most user-friendly experience, and you don’t need to wade through all the details. That’s why I took a different approach here. Instead of presenting a full Jupyter Notebook, I focused on the key steps of the workflow. With the help of the [Data Archive](https://rhyslwells.github.io/Data-Archive/pages/Data_Archive), I’ve also provided an opportunity to dig deeper into related and tangent topics for those who are interested.
+
+Thanks for reading! I hope this post helps you build more interpretable decision trees.
