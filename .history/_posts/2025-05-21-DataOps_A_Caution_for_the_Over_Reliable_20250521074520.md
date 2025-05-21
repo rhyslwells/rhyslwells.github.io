@@ -9,7 +9,7 @@ categories :
 tags: [DataOps]
 # toc: true
 # toc_label: "Table of Contents"
-excerpt: "A caution for those who quietly hold systems together."
+excerpt: "A fun little exploration into Honkit."
 header:
   overlay_image: 
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background

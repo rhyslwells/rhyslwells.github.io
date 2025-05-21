@@ -9,12 +9,29 @@ categories :
 tags: [DataOps]
 # toc: true
 # toc_label: "Table of Contents"
-excerpt: "A caution for those who quietly hold systems together."
+excerpt: "A fun little exploration into Honkit."
 header:
   overlay_image: 
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 #   caption: "Random picture"
 ---
+
+<!-- ---
+classes: 
+    - wide
+    - dark-theme
+title: "A Caution for the Over Reliable"
+date: 2025-05-21
+categories :
+    - blog
+tags: [DataOps,operations]
+excerpt: "A caution for those who quietly hold systems together.
+header:
+  overlay_image: 
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+#   caption: "Random picture"
+--- -->
+
 
 In many organisations, especially in operational or analytics-heavy environments, there’s a silent pattern that emerges: someone becomes the glue. They’re not formally promoted, not officially titled, but they **end up holding systems, processes, and people together**. This post outlines how that can happen, why it’s dangerous, and how easily it goes unnoticed—especially when you're effective at it.
 
