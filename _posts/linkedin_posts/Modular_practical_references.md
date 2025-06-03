@@ -1,0 +1,3 @@
+Often, finding a clear starting point for an MVP or workflow is harder than it should be. That's why for the past year I've been working on distillingmodular notebooks for ML and data engineering, as tools that I wish I had earlier. In this post, I outline how these repos can help speed up that process and support reuse across projects.
+
+https://rhyslwells.github.io/blog/Modular_practical_references/
