@@ -1,0 +1,5 @@
+I often need a repeatable environment to test different models and parameters across many types of time series data. That need is what motivated me to build Tempora, a Streamlit app for time series forecasting.
+
+Tempora lets users upload data, explore trends, run models like ARIMA or Prophet, and generate interpretable forecasts—all without writing code. The goal is simple: make forecasting faster, easier, and more consistent for anyone working with time-dependent data.
+
+If you have time I'd love for you to try it and share your feedback: [Full Blog Post Link]
