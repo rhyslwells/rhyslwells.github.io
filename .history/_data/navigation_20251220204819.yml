@@ -9,14 +9,14 @@ main:
   - title: "Projects"
     url: /projects/  # - title: "Sample Posts"
 
-  - title: "AIS"
-    url: /ais/  # - title: "Sample Posts"
+  # - title: "AIS"
+  #   url: /ais/  # - title: "Sample Posts"
 
   - title: Archive
     url: /posts/
 
-  - title: Feedback
-    url: /feedback/
+  # - title: Feedback
+  #   url: /feedback/
 
 
   #   url: /year-archive/
