@@ -6,7 +6,7 @@ title: "First client project learning outcomes"
 date: 2024-04-01
 categories: 
     - blog
-tags: [data science]
+tags: [Data Science]
 # toc: true
 # toc_label: "Table of Contents"
 excerpt: "Learning outcomes from my Science to Data Science placement."

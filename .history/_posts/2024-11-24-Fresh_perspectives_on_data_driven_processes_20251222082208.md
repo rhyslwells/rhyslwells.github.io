@@ -6,7 +6,7 @@ title: "Fresh perspectives on data-driven processes"
 date: 2024-11-24
 categories :
     - blog
-tags: [advice, data, learning]
+tags: [advice, data, innovation]
 # toc: true
 # toc_label: "Table of Contents"
 excerpt: "Unlock hidden efficiencies by rethinking workflows, harnessing data, and sparking a culture of innovation."

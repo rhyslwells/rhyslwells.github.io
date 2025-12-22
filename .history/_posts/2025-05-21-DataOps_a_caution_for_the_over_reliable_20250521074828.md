@@ -6,7 +6,7 @@ title: "A Caution for the Over Reliable"
 date: 2025-05-21
 categories :
     - blog
-tags: [data]
+tags: [DataOps]
 # toc: true
 # toc_label: "Table of Contents"
 excerpt: "A caution for those who quietly hold systems together."

@@ -6,7 +6,7 @@ title: "When a Project Becomes the Process"
 date: 2025-05-23
 categories :
     - blog
-tags: [projects,learning]
+tags: [projects,learning,reflection]
 # toc: true
 # toc_label: "Table of Contents"
 excerpt: "How do we handle projects that don't really end-just shift shape?"

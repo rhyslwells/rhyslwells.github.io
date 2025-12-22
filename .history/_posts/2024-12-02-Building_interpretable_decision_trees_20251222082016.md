@@ -6,7 +6,7 @@ title: "Building interpretable decision trees"
 date: 2024-12-02
 categories :
     - blog
-tags: [ML, interpretability]
+tags: [ML, Interpretability]
 # toc: true
 # toc_label: "Table of Contents"
 excerpt: "Building interpretable decision trees"
