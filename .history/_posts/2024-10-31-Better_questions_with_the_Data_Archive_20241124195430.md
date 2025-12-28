@@ -6,7 +6,7 @@ title: "Better questions with the Data Archive"
 date: 2024-10-31
 categories :
     - blog
-tags: [advice, knowledge, research]
+tags: [advice]
 # toc: true
 # toc_label: "Table of Contents"
 excerpt: "Enhanced research through a the Data Archive."
