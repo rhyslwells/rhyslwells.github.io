@@ -2,7 +2,7 @@
 classes: 
     - wide
     - dark-theme
-title: "Designing for Disinterest"
+title: "Why Data Projects Struggle Before Organisations Are Ready"
 date: 2025-12-29
 categories :
     - blog
@@ -16,7 +16,7 @@ header:
 #   caption: "Random picture"
 ---
 
-## Designing for Disinterest: Working Effectively in Data-Immature Organisations
+## Why Data Projects Struggle Before Organisations Are Ready
 
 Data work in many organisations struggles because they have not yet developed the structures needed to support data-led work in a sustained way. There is often a growing expectation that data should improve decision-making, efficiency, or transparency, but little shared understanding of what that improvement entails or what it **costs to achieve it**. In that gap, data practitioners are asked to produce clear results from loosely defined concerns, frequently without the authority or support that would normally accompany that responsibility.
 
