@@ -1,0 +1,49 @@
+---
+title: "[Project Name] — Review"
+date: YYYY-MM-DD
+tags: [app-building, reflection, review]
+series: "[Series Name]"
+---
+
+## Original Intent Revisited
+What problem was this meant to solve?
+Do those motivations still hold?
+
+## Outcome Summary
+What exists at the end of the build?
+What does the app demonstrably do?
+
+## Comparison to Objectives
+Which objectives were met?
+Which were partially met or missed?
+
+## Assumptions Evaluated
+| Assumption | Outcome | Evidence |
+|-----------|---------|----------|
+|           |         |          |
+
+## What Worked Well
+Which decisions paid off?
+Which constraints were helpful rather than limiting?
+
+## What Did Not
+Where effort was wasted or misdirected.
+Which complexities were underestimated.
+
+## Process Observations
+What this project revealed about:
+- Your design habits
+- Your build workflow
+- Your tolerance for uncertainty
+
+## Reusable Lessons
+What would you apply directly to the next project?
+What would you explicitly avoid repeating?
+
+## Next Steps
+Is this project:
+- Iterated further?
+- Parked?
+- Archived as a reference?
+
+Why is that the correct outcome?

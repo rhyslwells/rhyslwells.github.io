@@ -1,0 +1,51 @@
+---
+title: "[Project Name] — Scoping"
+date: YYYY-MM-DD
+tags: [app-building, scoping, design]
+series: "[Series Name]"
+---
+## Notes
+had fun writing the ideas of this, bluebook, images of notes...
+
+
+## Context
+What prompted this project?
+What situation or frustration does this app respond to?
+What existed already, and why was it insufficient?
+
+## Problem Definition
+What precise problem is being addressed?
+Who is the user, and what are they trying to do?
+What is explicitly out of scope?
+
+## Objectives
+What must this app achieve to be considered useful?
+What is the minimum acceptable outcome?
+
+## Constraints
+Time constraints:
+Technical constraints:
+Cognitive or maintenance constraints:
+
+## Assumptions
+- Assumption 1:
+- Assumption 2:
+- Assumption 3:
+
+(Include why each assumption is reasonable at this stage.)
+
+## Success Criteria
+How will success be evaluated?
+What observable signals would indicate failure?
+
+## Risks
+What could invalidate the project early?
+What uncertainties matter most?
+
+## Output of This Stage
+What artefacts now exist as a result of scoping?
+(e.g. notes, diagrams, repo skeleton, design sketch)
+
+## Carry-Forward Questions
+What remains unresolved?
+What decisions are intentionally deferred?

@@ -1,0 +1,46 @@
+---
+title: "[Project Name] — Building"
+date: YYYY-MM-DD
+tags: [app-building, implementation, engineering]
+series: "[Series Name]"
+---
+
+## Starting Point
+What inputs came from the scoping phase?
+Which assumptions were accepted going into the build?
+
+## Design Choices
+What architectural or structural decisions were made?
+Why these choices over alternatives?
+
+| Decision | Option Chosen | Trade-off Accepted |
+|--------|--------------|--------------------|
+|        |              |                    |
+
+## Implementation Focus
+What was prioritised during this phase?
+What was intentionally simplified or ignored?
+
+## Tools and Techniques
+Key libraries, frameworks, or patterns used.
+Brief rationale for each.
+
+## Friction and Failure
+What slowed progress?
+What behaved differently than expected?
+
+## Adjustments Made
+Which earlier assumptions were revised?
+Which design choices were changed mid-build?
+
+## Current State
+What works now?
+What is fragile, incomplete, or provisional?
+
+## Technical Debt Introduced
+What shortcuts were taken knowingly?
+Why were they acceptable at the time?
+
+## Open Questions
+What needs to be answered before further iteration?
+What risks remain active?

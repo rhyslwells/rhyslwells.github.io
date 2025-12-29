@@ -1,5 +1,7 @@
 Smart Connections - Explore this first.
 
+How do you articulate what  you want...
+
 # The Zettelkasten AI Assistant: A Personal Memory Partner
 
 *A practical vision for working with your notes as a living system*

@@ -1,10 +1,5 @@
 Smart Connections - Explore this first.
 
-this is why i am building the data-archive explorer.
-
-I do not care about what "this is not" phrases.
-
-Use the same format i used for other blog posts - explainatty
 
 \#Draft Title:
 **“Hunting Ideas: How to Discover, Capture, and Use Knowledge in Context”**
@@ -113,36 +108,3 @@ You still steer the ship. But the AI helps you find the wind.
 This post isn’t a prescription. It’s a pattern. Try it. Break it. Refine it.
 
 ---
-
-### format of blog post :
-
-Here’s a concise description of the blog post’s tone, phrasing, and style:
-
----
-
-**Tone:**
-
-* Professional, reflective, and analytical
-* Observational rather than prescriptive or motivational
-* Calmly critical of organisational structures, without blaming individuals
-
-**Phrasing:**
-
-* Clear, measured sentences with minimal rhetorical flourish
-* Uses concrete examples to illustrate abstract points (e.g., dashboards, spreadsheets, prototypes)
-* Avoids fragmentary “punchy” sentences; prefers continuous, flowing exposition
-* Frequent use of terms like *exploratory*, *provisional*, *proportional*, and *data maturity* to frame ideas
-
-**Style:**
-
-* Essayistic, structured around headings that guide the argument
-* Emphasis on explanation over anecdote, though examples are embedded naturally
-* Focuses on systemic patterns and practical responses rather than personal stories
-* UK spelling consistently used
-
-**Overall effect:**
-
-* Communicates insight and experience in a measured way
-* Balances critique with pragmatism, showing what can be done in immature environments
-* Designed to read as both reflective and practically useful, without being overly narrative or journalistic
-
