@@ -6,7 +6,7 @@ title: "Viva preparation"
 date: 2024-04-09
 categories :
     - blog
-tags: [PhD,advice]
+tags: [career]
 # toc: true
 # toc_label: "Table of Contents"
 excerpt: "Notes for preparing for a PhD viva."

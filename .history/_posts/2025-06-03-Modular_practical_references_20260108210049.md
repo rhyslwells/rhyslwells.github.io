@@ -6,7 +6,7 @@ title: "Modular, Practical References"
 date: 2025-06-03
 categories :
     - blog
-tags: [coding]
+tags: [data]
 # toc: true
 # toc_label: "Table of Contents"
 excerpt: "Time saving and learning tools."
