@@ -116,7 +116,7 @@ analytics:
 author:
   name             : "Rhys Wells"
   avatar           : "/assets/images/fav.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Problem solver with a passion for learning."
+  bio              : "Always Learning"
   location         : "Scotland"
   email            : "rhyslwells@outlook.com"
   links:
@@ -308,8 +308,9 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true 
+      author_profile: false 
       read_time: true
+      sidebar:false
       comments: true
       share: true
       related: true

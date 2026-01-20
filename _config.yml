@@ -308,8 +308,9 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true 
+      author_profile: false 
       read_time: true
+      sidebar: false
       comments: true
       share: true
       related: true
