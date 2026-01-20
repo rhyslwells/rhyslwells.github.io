@@ -2,7 +2,7 @@
 classes: 
     - wide
     - dark-theme
-title: "Building a Chess Analysis App - Exploring the Chess.com API with Python"
+title: "Building a Chess Analysis App (Part 1) - Exploring the Chess.com API with Python"
 date: 2026-01-20
 categories :
     - blog
@@ -16,8 +16,6 @@ header:
 #   caption: "Random picture"
 author_profile: false
 ---
-
-# Building a Chess Analysis App - Exploring the Chess.com API with Python
 
 ## Introduction
 
