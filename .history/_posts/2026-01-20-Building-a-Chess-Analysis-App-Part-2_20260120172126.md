@@ -1,3 +1,8 @@
+Here’s your blog post with corrections applied—typos fixed, minor phrasing adjusted for clarity, and formatting/consistency improvements—but the overall structure and tone are unchanged:
+
+---
+
+```markdown
 ---
 classes: 
     - wide
@@ -29,40 +34,46 @@ This post walks through the design and outputs of `ChessAnalyzer`, using my own 
 The analyzer sits downstream of `ChessFetcher` and requires no API calls or file I/O, operating purely on in-memory data. It prepares the data for plotting performed in the Chess Analysis application components.
 
 ```
+
 ChessFetcher -> ChessAnalyzer -> Insights / Features / Plots
+
 ```
 
-Where ChessAnalyzer inputs a pandas DataFrame from fetcher, and outputs:
-* Aggregated statistics (scalars or compact tables)
-* Transformed DataFrames suitable for plotting
-* Feature matrices for machine learning
+Inputs and outputs:
 
-I designed these design principles when I was writing the `ChessAnalyzer` class:
+- **Input:** pandas DataFrame from `ChessFetcher`
+- **Output:** aggregated statistics, transformed DataFrames for plotting, feature matrices for machine learning
+
+The class was designed with the following principles:
 
 * No external dependencies or side effects
 * Precomputed shared features, calculated once at initialisation
-* Composable outputs, in the form of dictionaries and DataFrames, not side effects
+* Composable outputs in the form of dictionaries and DataFrames, not side effects
 
 ## Initialisation and Derived Features
 
 Derived features are computed once at initialisation to maintain consistency across analyses. Examples of derived columns include:
 
 ```
+
 date        user_rating opponent_rating rating_diff opponent_category result_category
 2025-09-15          463              255        208       Lower Rated          Win
 2025-09-15          584              447        137       Lower Rated          Win
 2025-09-15          672              561        111       Lower Rated          Win
 2025-09-15          609              751       -142      Higher Rated         Loss
 2025-09-15          678              637         41    Similar Rating          Win
-```
+
+````
+
+The categories `Lower Rated`, `Higher Rated`, and `Similar Rating` indicate the relative strength of the opponent compared to the user.
 
 ## Overall Performance Statistics
 
-High-level metrics are used to summarise overall performance, and provides a coarse summary of success and rating progression.
+High-level metrics summarise overall performance and provide a coarse overview of success and rating progression.
 
 ```python
 stats = analyzer.get_overall_stats()
-```
+````
 
 | Metric       | Value |
 | ------------ | ----- |
@@ -72,17 +83,25 @@ stats = analyzer.get_overall_stats()
 | Current Elo  | 741   |
 | Net change   | +278  |
 
+A net rating increase of +278 over 264 games indicates steady improvement.
 
 ## Rating Dynamics and Volatility
 
-We allow for the user to visualise how their rating changes over time, and the volatility of these changes.
+Tracks rating evolution and consistency.
+
+**Trend over time:**
 
 ```python
 trend = analyzer.get_rating_trend()
+```
+
+Rating volatility is calculated as the standard deviation of rating changes between consecutive games:
+
+```python
 volatility = analyzer.get_rating_volatility()
 ```
-![alt text](../assets/images/chess-analysis/vol.png)
 
+![Rating volatility over time](../../assets/images/chess-analysis/vol.png)
 
 ## Opening Repertoire Analysis
 
@@ -92,7 +111,7 @@ This identifies frequently played and effective openings. It shows your preferre
 openings = analyzer.get_opening_stats(top_n=10)
 ```
 
-![alt text](../assets/images/chess-analysis/openings.png)
+![Top 10 openings by frequency and win rate](../../assets/images/chess-analysis/openings.png)
 
 ## Game Duration Analysis
 
@@ -103,14 +122,13 @@ length_stats = analyzer.get_game_length_stats()
 length_by_result = analyzer.get_game_length_by_result()
 ```
 
+![Game length vs. result scatter plot](..\..\assets\images\chess-analysis\scatter.png)
+
 One interpretation could be that short-game losses indicate early blunders, while longer games suggest balanced or endgame-heavy play.
-
-![alt text](../assets/images/chess-analysis/scatter.png)
-
 
 ## Machine Learning Feature Preparation
 
-This method prepares pre-game features for predictive models, avoiding [leakage](https://rhyslwells.github.io/Data-Archive/categories/data-engineering/Data-Leakage).
+Prepares pre-game features for predictive models, avoiding leakage.
 
 ```python
 X, y = analyzer.prepare_ml_features()
@@ -118,18 +136,15 @@ X, y = analyzer.prepare_ml_features()
 
 Features include: user rating, opponent rating, rating difference, and a binary indicator for playing White. The target is 1 = win, 0 = loss/draw. The model outputs predicted win probabilities using a logistic regression classifier.
 
-![Win Probabilities](../assets/images/chess-analysis/ml.png)
+![ML feature overview](../../assets/images/chess-analysis/ml.png)
 
 ## Conclusion
-By separating data acquisition from analysis, `ChessAnalyzer` forms the analytical core of the Chess Analysis app and converts cleaned chess game data into structured, actionable insights. It supports the following within the application:
+
+`ChessAnalyzer` converts cleaned chess game data into structured, actionable insights. It supports:
 
 * Descriptive statistics
 * Exploratory analysis
 * Dashboard visualisation
 * Machine learning workflows
 
-These outputs allow users to identify strengths and weaknesses in their play, optimise opening choices, and track rating progression over time.  
-
-Future extensions could include per-opening performance trends, endgame analysis, and more predictive models.
-
-
+By separating data acquisition from analysis, it forms the analytical core of the Chess Analysis app.

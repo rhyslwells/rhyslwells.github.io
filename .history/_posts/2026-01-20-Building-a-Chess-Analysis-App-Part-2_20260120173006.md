@@ -121,15 +121,12 @@ Features include: user rating, opponent rating, rating difference, and a binary 
 ![Win Probabilities](../assets/images/chess-analysis/ml.png)
 
 ## Conclusion
-By separating data acquisition from analysis, `ChessAnalyzer` forms the analytical core of the Chess Analysis app and converts cleaned chess game data into structured, actionable insights. It supports the following within the application:
+
+`ChessAnalyzer` converts cleaned chess game data into structured, actionable insights. It supports:
 
 * Descriptive statistics
 * Exploratory analysis
 * Dashboard visualisation
 * Machine learning workflows
 
-These outputs allow users to identify strengths and weaknesses in their play, optimise opening choices, and track rating progression over time.  
-
-Future extensions could include per-opening performance trends, endgame analysis, and more predictive models.
-
-
+By separating data acquisition from analysis, it forms the analytical core of the Chess Analysis app.
