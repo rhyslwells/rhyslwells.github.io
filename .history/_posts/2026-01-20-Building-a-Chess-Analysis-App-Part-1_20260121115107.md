@@ -20,7 +20,7 @@ header:
 
 As part of my Streamlit [Chess Analysis](https://chess-analysis.streamlit.app/) project, one of the first challenges was fetching and processing game data from Chess.com. While Chess.com provides [Published Data API](https://www.chess.com/news/view/published-data-api), working with it directly presents several challenges: navigating monthly archive pagination, handling edge cases in game timing data, and structuring JSON responses for analysis.
 
-This post explores how I built the [ChessDataFetcher](https://github.com/rhyslwells/Chess-Analysis/blob/main/src/data_fetcher.py) class to handle these challenges. I'll use real data from my account as a working example, to demonstrate the system in action.
+This post explores how I built the `[ChessDataFetcher](https://github.com/rhyslwells/Chess-Analysis/blob/main/src/data_fetcher.py)` class to handle these challenges. I'll use real data from my account as a working example, to demonstrate the system in action.
 
 ## The Chess.com API: Structure and Challenges
 
